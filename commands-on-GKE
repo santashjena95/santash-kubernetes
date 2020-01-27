@@ -1,0 +1,11 @@
+git clone https://github.com/santashjena95/santash-kubernetes.git
+gcloud container clusters get-credentials example-voting-app --zone us-central1-a
+kubectl create -f santash-voting-app-pod.yml
+kubectl create -f santash-voting-app-service.yml
+kubectl create -f santash-redis-pod.yml
+kubectl create -f santash-redis-service.yml
+kubectl create -f santash-worker-app-pod.yml
+kubectl create -f santash-postgres-pod.yml
+kubectl create -f santash-postgres-service.yml
+kubectl create -f santash-result-app-pod.yml
+kubectl create -f santash-result-app-service.yml
